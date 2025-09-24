@@ -9,12 +9,15 @@ A solução agora é composta por páginas específicas que compartilham a mesma
 inicial reúne:
 
 - **Hero** com indicadores sintéticos e atalhos rápidos.
+- **Resumo integrado** com cards de serviços, agenda, suporte e base de conhecimento alimentados dinamicamente.
+- **Mapa de integrações** destacando como cada módulo compartilha dados e alertas entre si.
 - **Catálogo de serviços** com filtro por categoria e busca textual.
 - **Agenda** com prazos institucionais e contagem regressiva dinâmica.
 - **Central de suporte** com formulário e mensagens de confirmação instantânea.
 - **FAQ interativo** com expansão/colapso acessível.
 
-Além disso, há páginas dedicadas com visões completas de catálogo, agenda, suporte e base de conhecimento.
+Além disso, há páginas dedicadas com visões completas de catálogo, agenda, suporte e base de conhecimento, incluindo matrizes
+de responsabilidade, tabelas de protocolos em tempo real e canais de atendimento atualizados.
 
 ## Como executar
 
@@ -47,5 +50,5 @@ e acesse `http://localhost:8000`. Navegue pelas páginas `index.html`, `servicos
 ## Melhorias futuras
 
 - Conectar os formulários e consultas a uma API real de serviços do Estado.
-- Persistir preferências de filtros utilizando armazenamento local.
+- Sincronizar preferências e protocolos com autenticação do servidor público.
 - Internacionalizar a interface para outros idiomas.

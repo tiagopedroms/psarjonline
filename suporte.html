@@ -59,6 +59,16 @@
         </div>
       </section>
 
+      <section class="insight-section" aria-labelledby="suporte-indicadores-title">
+        <div class="module-section__header">
+          <div>
+            <h2 id="suporte-indicadores-title">Indicadores operacionais</h2>
+            <p>Acompanhe desempenho, níveis de serviço e satisfação por canal.</p>
+          </div>
+        </div>
+        <div class="insight-grid" id="indicadores-suporte" role="list"></div>
+      </section>
+
       <section class="support-section" id="contato" aria-labelledby="contato-suporte-title">
         <div>
           <h2 id="contato-suporte-title">Abra um chamado personalizado</h2>
@@ -66,20 +76,7 @@
             Escolha o assunto, descreva a demanda e anexe evidências para agilizar a análise técnica. Nossa equipe direciona o
             atendimento para a secretaria responsável.
           </p>
-          <ul class="support-section__channels">
-            <li>
-              <strong>Chat instantâneo:</strong>
-              canal autenticado com registro das conversas e anexos.
-            </li>
-            <li>
-              <strong>Portal de chamados:</strong>
-              dashboards com SLA, responsáveis e histórico completo.
-            </li>
-            <li>
-              <strong>Plantão telefônico:</strong>
-              atendimento emergencial para indisponibilidades críticas.
-            </li>
-          </ul>
+          <ul class="support-section__channels" id="canais-suporte" role="list"></ul>
         </div>
         <form class="support-section__form" aria-label="Formulário de contato">
           <h3>Preencha os dados do chamado</h3>
@@ -104,6 +101,10 @@
             Receba por e-mail o protocolo, prazos de atendimento e atualizações a cada movimentação.
           </p>
         </form>
+        <aside class="module-aside" aria-label="Indicadores do suporte">
+          <h3 class="module-aside__title">Filas monitoradas</h3>
+          <ul class="module-aside__list" id="suporte-indicadores" role="list"></ul>
+        </aside>
       </section>
 
       <section class="page-section" aria-labelledby="canais-adicionais">
@@ -153,6 +154,14 @@
           <li><strong>Resolução assistida:</strong> aplicação de scripts e orientações validadas pelos especialistas.</li>
           <li><strong>Feedback contínuo:</strong> pesquisa de satisfação e plano de melhorias compartilhado.</li>
         </ol>
+      </section>
+
+      <section class="page-section" aria-labelledby="relatorios-suporte">
+        <div class="page-section__header">
+          <h2 id="relatorios-suporte">Relatórios e protocolos recentes</h2>
+          <p class="page-section__lead">Integração direta com o catálogo de serviços e a agenda institucional.</p>
+        </div>
+        <div class="data-table" role="table" aria-label="Protocolos recentes" id="tabela-protocolos"></div>
       </section>
     </main>
 

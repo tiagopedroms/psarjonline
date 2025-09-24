@@ -69,6 +69,38 @@
         </article>
       </section>
 
+      <section class="insight-section" aria-labelledby="resumo-plataforma-title">
+        <div class="module-section__header">
+          <div>
+            <h2 id="resumo-plataforma-title">Resumo integrado da plataforma</h2>
+            <p>
+              Visualize o status consolidado de serviços digitais, agenda, suporte e base de conhecimento para planejar ações
+              coordenadas entre as secretarias.
+            </p>
+          </div>
+        </div>
+        <div class="insight-grid" id="resumo-plataforma" role="list"></div>
+      </section>
+
+      <section class="integration-section" aria-labelledby="mapa-integracoes-title">
+        <div class="module-section__header">
+          <div>
+            <h2 id="mapa-integracoes-title">Mapa de integrações governamentais</h2>
+            <p>
+              Confira como os módulos do PSARJ Online compartilham dados e notificações para garantir atendimento único ao
+              servidor.
+            </p>
+          </div>
+          <div class="module-section__controls" role="group" aria-label="Acessos rápidos">
+            <a class="ghost-button" href="servicos.html">Catálogo completo</a>
+            <a class="ghost-button" href="agenda.html">Agenda oficial</a>
+            <a class="ghost-button" href="suporte.html">Central de suporte</a>
+            <a class="ghost-button" href="faq.html">Base de conhecimento</a>
+          </div>
+        </div>
+        <div class="integration-map" id="mapa-integracoes" role="list"></div>
+      </section>
+
       <section id="servicos" class="module-section" aria-labelledby="servicos-title">
         <div class="module-section__header">
           <div>
@@ -93,6 +125,10 @@
           </div>
         </div>
         <div class="module-grid" id="lista-servicos" role="list"></div>
+        <aside class="module-aside" aria-label="Fluxos em destaque">
+          <h3 class="module-aside__title">Fluxos em destaque</h3>
+          <ul class="module-aside__list" id="servicos-destaques" role="list"></ul>
+        </aside>
         <div class="module-section__footer">
           <a class="module-section__link" href="servicos.html">Abrir catálogo completo de serviços</a>
         </div>
@@ -102,6 +138,10 @@
         <h2 id="agenda-title">Agenda e prazos</h2>
         <p>Fique atento aos prazos de publicação, recadastramento e entrega de relatórios.</p>
         <div class="agenda-section__list" id="agenda-detalhada" role="list"></div>
+        <aside class="module-aside" aria-label="Responsáveis por agenda">
+          <h3 class="module-aside__title">Coordenação compartilhada</h3>
+          <dl class="module-aside__details" id="agenda-responsaveis"></dl>
+        </aside>
         <div class="module-section__footer">
           <a class="module-section__link" href="agenda.html">Ver agenda completa e orientações</a>
         </div>
@@ -113,20 +153,7 @@
           <p>
             Conte com canais especializados, base de conhecimento colaborativa e acompanhamento de chamados em tempo real.
           </p>
-          <ul class="support-section__channels">
-            <li>
-              <strong>Atendimento imediato:</strong>
-              Chat seguro autenticado com agentes de cada órgão.
-            </li>
-            <li>
-              <strong>Base de conhecimento:</strong>
-              Tutoriais passo a passo, modelos de documentos e perguntas frequentes.
-            </li>
-            <li>
-              <strong>Comunidade:</strong>
-              Espaço para compartilhar boas práticas e padronizar procedimentos.
-            </li>
-          </ul>
+          <ul class="support-section__channels" id="canais-suporte-destaque" role="list"></ul>
         </div>
         <form class="support-section__form" aria-label="Formulário de contato">
           <h3>Precisa de ajuda?</h3>
@@ -147,6 +174,10 @@
             Receba um protocolo automaticamente e acompanhe o status no painel.
           </p>
         </form>
+        <aside class="module-aside" aria-label="Indicadores do suporte">
+          <h3 class="module-aside__title">Indicadores em tempo real</h3>
+          <ul class="module-aside__list" id="suporte-indicadores" role="list"></ul>
+        </aside>
         <div class="module-section__footer">
           <a class="module-section__link" href="suporte.html">Conheça todos os canais de suporte</a>
         </div>
@@ -155,6 +186,10 @@
       <section class="faq-section" aria-labelledby="faq-title">
         <h2 id="faq-title">Perguntas frequentes</h2>
         <div class="faq-list" id="faq-list" role="list"></div>
+        <aside class="module-aside" aria-label="Coleções em destaque">
+          <h3 class="module-aside__title">Coleções recomendadas</h3>
+          <ul class="module-aside__list" id="faq-colecoes" role="list"></ul>
+        </aside>
         <div class="module-section__footer">
           <a class="module-section__link" href="faq.html">Acessar base completa de conhecimento</a>
         </div>

@@ -55,12 +55,26 @@
         </div>
       </section>
 
+      <section class="insight-section" aria-labelledby="agenda-indicadores-title">
+        <div class="module-section__header">
+          <div>
+            <h2 id="agenda-indicadores-title">Indicadores de conformidade</h2>
+            <p>Monitoramento de andamento, riscos e responsáveis para cada entrega crítica.</p>
+          </div>
+        </div>
+        <div class="insight-grid" id="indicadores-agenda" role="list"></div>
+      </section>
+
       <section id="agenda" class="agenda-section" aria-labelledby="agenda-detalhada-title">
         <h2 id="agenda-detalhada-title">Acompanhamento detalhado</h2>
         <p>
           Consulte o cronograma completo, verifique responsáveis e acompanhe a contagem regressiva automática para cada entrega.
         </p>
         <div class="agenda-section__list" id="agenda-detalhada" role="list"></div>
+        <aside class="module-aside" aria-label="Responsáveis por agenda">
+          <h3 class="module-aside__title">Responsáveis oficiais</h3>
+          <dl class="module-aside__details" id="agenda-responsaveis"></dl>
+        </aside>
       </section>
 
       <section class="page-section" aria-labelledby="boas-praticas-agenda">
@@ -100,6 +114,14 @@
             </ul>
           </article>
         </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="matriz-orgaos">
+        <div class="page-section__header">
+          <h2 id="matriz-orgaos">Orquestração entre secretarias</h2>
+          <p class="page-section__lead">Confira como cada área contribui para o cumprimento dos prazos.</p>
+        </div>
+        <div class="data-table" role="table" aria-label="Matriz de orquestração" id="matriz-agenda"></div>
       </section>
     </main>
 

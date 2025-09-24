@@ -59,6 +59,16 @@
         </div>
       </section>
 
+      <section class="insight-section" aria-labelledby="indicadores-servicos-title">
+        <div class="module-section__header">
+          <div>
+            <h2 id="indicadores-servicos-title">Indicadores estratégicos</h2>
+            <p>Resumo de implantação, satisfação e integrações para priorizar evoluções do catálogo.</p>
+          </div>
+        </div>
+        <div class="insight-grid" id="indicadores-servicos" role="list"></div>
+      </section>
+
       <section id="servicos" class="module-section" aria-labelledby="catalogo-servicos-title">
         <div class="module-section__header">
           <div>
@@ -86,6 +96,10 @@
           </div>
         </div>
         <div class="module-grid" id="lista-servicos" role="list"></div>
+        <aside class="module-aside" aria-label="Fluxos em destaque">
+          <h3 class="module-aside__title">Ações prioritárias</h3>
+          <ul class="module-aside__list" id="servicos-destaques" role="list"></ul>
+        </aside>
       </section>
 
       <section class="page-section" aria-labelledby="guia-implantacao">
@@ -110,40 +124,7 @@
             Utilize a matriz abaixo para organizar obrigações entre órgãos e garantir atendimento padronizado ao servidor.
           </p>
         </div>
-        <div class="page-section__grid">
-          <article class="page-section__card">
-            <h3>Gestão de Pessoas</h3>
-            <ul class="page-section__list">
-              <li>Homologar fluxos de férias, licenças e afastamentos.</li>
-              <li>Atualizar dados cadastrais e vínculos funcionais.</li>
-              <li>Acompanhar indicadores de provimento e vacância.</li>
-            </ul>
-          </article>
-          <article class="page-section__card">
-            <h3>Financeiro</h3>
-            <ul class="page-section__list">
-              <li>Validar rubricas e conformidade orçamentária.</li>
-              <li>Emitir relatórios para auditorias internas e externas.</li>
-              <li>Configurar alertas de fechamento de folha.</li>
-            </ul>
-          </article>
-          <article class="page-section__card">
-            <h3>Documentos</h3>
-            <ul class="page-section__list">
-              <li>Gerenciar modelos oficiais e fluxos de assinatura digital.</li>
-              <li>Padronizar portarias, certidões e atas.</li>
-              <li>Garantir versionamento e trilha de auditoria.</li>
-            </ul>
-          </article>
-          <article class="page-section__card">
-            <h3>Saúde do Servidor</h3>
-            <ul class="page-section__list">
-              <li>Agendar perícias e monitorar laudos médicos.</li>
-              <li>Integrar teleatendimento e programas de bem-estar.</li>
-              <li>Gerir comunicação com unidades de origem.</li>
-            </ul>
-          </article>
-        </div>
+        <div class="data-table" role="table" aria-label="Matriz de responsabilidades" id="matriz-responsabilidades-grid"></div>
       </section>
     </main>
 
