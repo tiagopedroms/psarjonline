@@ -1,0 +1,43 @@
+:root {
+  --bs-body-font-family: 'Segoe UI', sans-serif;
+  --bs-primary: #7a1d2a;
+  --bs-secondary: #0b5d1e;
+  --bs-info: #0d6efd;
+}
+body {
+  font-family: var(--bs-body-font-family);
+  background-color: #f7f7f7;
+  margin: 0;
+  color: #212529;
+}
+a {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+.container { max-width: 1180px; margin: 0 auto; padding: 1.5rem; }
+.navbar { background: var(--bs-primary); color: #fff; padding: 1rem; }
+.navbar a { color: #fff; margin-right: 1rem; }
+.btn { display: inline-block; padding: 0.5rem 1rem; border-radius: 4px; border: 0; cursor: pointer; }
+.btn-primary { background: var(--bs-primary); color: #fff; }
+.btn-secondary { background: var(--bs-secondary); color: #fff; }
+.table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.table th, .table td { border: 1px solid #ccc; padding: 0.5rem; }
+.table thead { background: #ececec; }
+.form-control, select, textarea { width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+.form-group { margin-bottom: 1rem; }
+.alert { padding: 0.75rem 1rem; border-radius: 4px; margin: 1rem 0; }
+.alert-danger { background: #f8d7da; color: #842029; }
+.alert-success { background: #d1e7dd; color: #0f5132; }
+.card { background: #fff; border-radius: 6px; padding: 1rem; box-shadow: 0 1px 2px rgba(0,0,0,0.08); margin-bottom: 1rem; }
+.row { display: flex; flex-wrap: wrap; margin: -0.5rem; }
+.col { flex: 1 0 0%; padding: 0.5rem; }
+.col-6 { flex: 0 0 50%; padding: 0.5rem; }
+.col-4 { flex: 0 0 33.333%; padding: 0.5rem; }
+.text-end { text-align: right; }
+.table-responsive { overflow-x: auto; }
+.badge { padding: 0.25rem 0.5rem; border-radius: 12px; background: var(--bs-secondary); color: #fff; }
+@media (max-width: 768px) {
+  .row { flex-direction: column; }
+  .col-6, .col-4 { flex: 1 0 100%; }
+}

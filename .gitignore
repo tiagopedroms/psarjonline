@@ -1,0 +1,9 @@
+/config/env.php
+/storage/logs/*.log
+/storage/uploads/*
+!/storage/uploads/.htaccess
+/storage/backups/*
+!/storage/logs/.gitkeep
+!/storage/backups/.gitkeep
+/vendor/tcpdf
+/vendor/phpmailer
