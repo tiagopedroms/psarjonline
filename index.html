@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PSARJ Online</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  </head>
+  <body>
+    <header class="top-bar" role="banner">
+      <div class="top-bar__brand">
+        <img src="assets/logo.svg" alt="Logotipo PSARJ" class="top-bar__logo" />
+        <div>
+          <span class="top-bar__title">PSARJ Online</span>
+          <span class="top-bar__subtitle">Portal digital do servidor público do RJ</span>
+        </div>
+      </div>
+      <nav class="top-bar__actions" aria-label="Atalhos principais">
+        <button type="button" class="ghost-button" data-action="services">Serviços</button>
+        <button type="button" class="ghost-button" data-action="calendar">Agenda</button>
+        <button type="button" class="ghost-button" data-action="support">Suporte</button>
+      </nav>
+    </header>
+
+    <main id="conteudo" class="page-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__highlight">
+          <h1 id="hero-title">Transforme a rotina de atendimento do servidor</h1>
+          <p>
+            A plataforma PSARJ Online centraliza comunicação, serviços e acompanhamento de
+            demandas em um único painel seguro e acessível para todos os órgãos do Estado do Rio de Janeiro.
+          </p>
+          <div class="hero__actions">
+            <a class="primary-button" href="#servicos" data-scroll-to>Explorar serviços</a>
+            <a class="secondary-button" href="#suporte" data-scroll-to>Fale com a equipe</a>
+          </div>
+        </div>
+        <div class="hero__dashboard" aria-hidden="true">
+          <div class="dashboard-card">
+            <div class="dashboard-card__title">Painel de indicadores</div>
+            <ul class="dashboard-card__stats">
+              <li><span>15.248</span> solicitações concluídas</li>
+              <li><span>98%</span> satisfação média</li>
+              <li><span>08</span> integrações ativas</li>
+            </ul>
+          </div>
+          <div class="dashboard-card dashboard-card--secondary">
+            <div class="dashboard-card__title">Alertas de agenda</div>
+            <ol class="dashboard-card__timeline" id="dashboard-agenda"></ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlight-grid" aria-label="Destaques da plataforma">
+        <article class="highlight-card">
+          <h2>Serviços integrados</h2>
+          <p>Solicite licenças, gratificações e documentos oficiais em fluxos 100% digitais.</p>
+        </article>
+        <article class="highlight-card">
+          <h2>Transparência</h2>
+          <p>Acompanhe a evolução dos protocolos com indicadores de desempenho atualizados.</p>
+        </article>
+        <article class="highlight-card">
+          <h2>Acessível em qualquer dispositivo</h2>
+          <p>Layout responsivo com suporte a leitores de tela e contraste aprimorado.</p>
+        </article>
+      </section>
+
+      <section id="servicos" class="module-section" aria-labelledby="servicos-title">
+        <div class="module-section__header">
+          <div>
+            <h2 id="servicos-title">Catálogo de serviços</h2>
+            <p>Filtre por secretaria ou busque por palavra-chave para encontrar o que você precisa.</p>
+          </div>
+          <div class="module-section__controls" role="group" aria-label="Filtros de serviço">
+            <input
+              type="search"
+              id="busca-servicos"
+              class="module-section__search"
+              placeholder="Buscar por nome do serviço"
+              aria-label="Buscar por nome do serviço"
+            />
+            <div class="filter-group" role="toolbar" aria-label="Filtrar por categoria">
+              <button type="button" class="filter-button is-active" data-filter="todos">Todos</button>
+              <button type="button" class="filter-button" data-filter="gestao">Gestão de Pessoas</button>
+              <button type="button" class="filter-button" data-filter="financeiro">Financeiro</button>
+              <button type="button" class="filter-button" data-filter="documentos">Documentos</button>
+              <button type="button" class="filter-button" data-filter="saude">Saúde</button>
+            </div>
+          </div>
+        </div>
+        <div class="module-grid" id="lista-servicos" role="list"></div>
+      </section>
+
+      <section id="agenda" class="agenda-section" aria-labelledby="agenda-title">
+        <h2 id="agenda-title">Agenda e prazos</h2>
+        <p>Fique atento aos prazos de publicação, recadastramento e entrega de relatórios.</p>
+        <div class="agenda-section__list" id="agenda-detalhada" role="list"></div>
+      </section>
+
+      <section class="support-section" id="suporte" aria-labelledby="suporte-title">
+        <div>
+          <h2 id="suporte-title">Central de suporte integrada</h2>
+          <p>
+            Conte com canais especializados, base de conhecimento colaborativa e acompanhamento de chamados em tempo real.
+          </p>
+          <ul class="support-section__channels">
+            <li>
+              <strong>Atendimento imediato:</strong>
+              Chat seguro autenticado com agentes de cada órgão.
+            </li>
+            <li>
+              <strong>Base de conhecimento:</strong>
+              Tutoriais passo a passo, modelos de documentos e perguntas frequentes.
+            </li>
+            <li>
+              <strong>Comunidade:</strong>
+              Espaço para compartilhar boas práticas e padronizar procedimentos.
+            </li>
+          </ul>
+        </div>
+        <form class="support-section__form" aria-label="Formulário de contato">
+          <h3>Precisa de ajuda?</h3>
+          <label class="field">
+            <span>Nome completo</span>
+            <input type="text" name="nome" required autocomplete="name" />
+          </label>
+          <label class="field">
+            <span>E-mail institucional</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label class="field">
+            <span>Mensagem</span>
+            <textarea name="mensagem" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="primary-button">Abrir chamado</button>
+          <p class="support-section__disclaimer">
+            Receba um protocolo automaticamente e acompanhe o status no painel.
+          </p>
+        </form>
+      </section>
+
+      <section class="faq-section" aria-labelledby="faq-title">
+        <h2 id="faq-title">Perguntas frequentes</h2>
+        <div class="faq-list" id="faq-list" role="list"></div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>
+        <strong>PSARJ Online</strong>
+        <p>Secretaria de Administração do Estado do Rio de Janeiro</p>
+      </div>
+      <div>
+        <p>Suporte técnico: suporte@psarj.rj.gov.br</p>
+        <p>Atendimento: (21) 0000-0000</p>
+      </div>
+      <div class="page-footer__tagline">Sistema construído com dados textuais, compatível com revisão em repositório.</div>
+    </footer>
+
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>
