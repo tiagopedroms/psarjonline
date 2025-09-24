@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Logotipo da Paróquia Santo Agostinho e Santa Rita de Cássia</title>
+  <desc id="logoDesc">Tipografia estilizada com cruz centralizada e faixas verde e bordô</desc>
+  <rect width="220" height="60" fill="#fff" rx="8"/>
+  <path d="M16 10 L30 10 L23 24 Z" fill="#7a1d2a"/>
+  <path d="M16 50 L30 50 L23 36 Z" fill="#0b5d1e"/>
+  <rect x="38" y="12" width="4" height="36" fill="#7a1d2a"/>
+  <rect x="30" y="26" width="20" height="4" fill="#7a1d2a"/>
+  <text x="60" y="24" font-family="'Segoe UI', sans-serif" font-weight="bold" font-size="16" fill="#333">Paróquia</text>
+  <text x="60" y="42" font-family="'Segoe UI', sans-serif" font-size="14" fill="#7a1d2a">Santo Agostinho</text>
+  <text x="60" y="54" font-family="'Segoe UI', sans-serif" font-size="12" fill="#0b5d1e">Santa Rita de Cássia</text>
+</svg>

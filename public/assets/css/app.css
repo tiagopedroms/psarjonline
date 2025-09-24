@@ -1,0 +1,12 @@
+body { line-height: 1.6; }
+.navbar-brand { font-weight: 700; font-size: 1.25rem; }
+.navbar .user { float: right; }
+.sidebar { min-width: 220px; }
+.main-content { padding: 1.5rem; }
+footer { text-align: center; padding: 1rem; font-size: 0.875rem; color: #6c757d; }
+.table-actions { display: flex; gap: 0.25rem; }
+.badge-status { background: #0b5d1e; color: #fff; padding: 0.25rem 0.5rem; border-radius: 999px; }
+
+.navbar div { display:inline-block; margin-right:1rem; }
+.navbar div a { color:#fff; margin-right:0.5rem; }
+.navbar .user { margin-left:1rem; }
