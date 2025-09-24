@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agenda institucional - PSARJ Online</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  </head>
+  <body>
+    <header class="top-bar" role="banner">
+      <div class="top-bar__brand">
+        <img src="assets/logo.svg" alt="Logotipo PSARJ" class="top-bar__logo" />
+        <div>
+          <span class="top-bar__title">PSARJ Online</span>
+          <span class="top-bar__subtitle">Portal digital do servidor público do RJ</span>
+        </div>
+      </div>
+      <nav class="top-bar__actions" aria-label="Navegação principal">
+        <a class="ghost-button top-bar__link" href="index.html">Início</a>
+        <a class="ghost-button top-bar__link" href="servicos.html">Serviços</a>
+        <a class="ghost-button top-bar__link" href="agenda.html">Agenda</a>
+        <a class="ghost-button top-bar__link" href="suporte.html">Suporte</a>
+        <a class="ghost-button top-bar__link" href="faq.html">FAQ</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="page-hero page-hero--agenda" aria-labelledby="agenda-title-main">
+        <div class="page-hero__intro">
+          <h1 id="agenda-title-main">Agenda institucional e prazos</h1>
+          <p>
+            Monitore entregas obrigatórias, organize fluxos de aprovação entre órgãos e mantenha a gestão informada sobre os
+            marcos críticos do calendário oficial.
+          </p>
+          <div class="page-hero__actions">
+            <a class="primary-button" href="#agenda" data-scroll-to="agenda">Conferir prazos detalhados</a>
+            <a class="secondary-button" href="suporte.html">Solicitar apoio da equipe</a>
+          </div>
+          <p class="page-hero__note">Atualizado diariamente com base nas diretrizes das secretarias estaduais.</p>
+        </div>
+        <div class="page-hero__info">
+          <article class="dashboard-card dashboard-card--secondary">
+            <div class="dashboard-card__title">Próximos alertas</div>
+            <ol class="dashboard-card__timeline" id="dashboard-agenda"></ol>
+          </article>
+          <article class="dashboard-card">
+            <div class="dashboard-card__title">Status geral</div>
+            <ul class="dashboard-card__stats">
+              <li><span>08</span> prazos em acompanhamento</li>
+              <li><span>03</span> alertas críticos</li>
+              <li><span>15</span> responsáveis notificados</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="agenda" class="agenda-section" aria-labelledby="agenda-detalhada-title">
+        <h2 id="agenda-detalhada-title">Acompanhamento detalhado</h2>
+        <p>
+          Consulte o cronograma completo, verifique responsáveis e acompanhe a contagem regressiva automática para cada entrega.
+        </p>
+        <div class="agenda-section__list" id="agenda-detalhada" role="list"></div>
+      </section>
+
+      <section class="page-section" aria-labelledby="boas-praticas-agenda">
+        <div class="page-section__header">
+          <h2 id="boas-praticas-agenda">Boas práticas para cumprir os prazos</h2>
+          <p class="page-section__lead">
+            Adote as recomendações abaixo para garantir que as entregas cheguem ao Tribunal de Contas e às secretarias dentro do
+            prazo regulamentar.
+          </p>
+        </div>
+        <div class="page-section__grid">
+          <article class="page-section__card">
+            <h3>Planejamento integrado</h3>
+            <p>Sincronize agendas com órgãos parceiros e alinhe a publicação de relatórios e portarias.</p>
+            <ul class="page-section__list">
+              <li>Defina responsáveis suplentes para cada marco.</li>
+              <li>Compartilhe o calendário em salas de situação.</li>
+              <li>Automatize lembretes por e-mail e chat corporativo.</li>
+            </ul>
+          </article>
+          <article class="page-section__card">
+            <h3>Governança documental</h3>
+            <p>Garanta revisão jurídica e registro de evidências antes do envio ao órgão de controle.</p>
+            <ul class="page-section__list">
+              <li>Utilize modelos certificados pelo jurídico central.</li>
+              <li>Registre pareceres e anexos em trilhas de auditoria.</li>
+              <li>Defina níveis de aprovação e substitutos automáticos.</li>
+            </ul>
+          </article>
+          <article class="page-section__card">
+            <h3>Transparência com a gestão</h3>
+            <p>Disponibilize painéis com contagem regressiva e status de cada entrega prioritária.</p>
+            <ul class="page-section__list">
+              <li>Configure alertas para atrasos acima de 24 horas.</li>
+              <li>Compartilhe dashboards com secretários e subsecretários.</li>
+              <li>Documente planos de ação e responsáveis.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>
+        <strong>PSARJ Online</strong>
+        <p>Secretaria de Administração do Estado do Rio de Janeiro</p>
+      </div>
+      <div>
+        <p>Suporte técnico: suporte@psarj.rj.gov.br</p>
+        <p>Atendimento: (21) 0000-0000</p>
+      </div>
+      <div class="page-footer__tagline">Sistema construído com dados textuais, compatível com revisão em repositório.</div>
+    </footer>
+
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>

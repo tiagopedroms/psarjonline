@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo de serviços - PSARJ Online</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  </head>
+  <body>
+    <header class="top-bar" role="banner">
+      <div class="top-bar__brand">
+        <img src="assets/logo.svg" alt="Logotipo PSARJ" class="top-bar__logo" />
+        <div>
+          <span class="top-bar__title">PSARJ Online</span>
+          <span class="top-bar__subtitle">Portal digital do servidor público do RJ</span>
+        </div>
+      </div>
+      <nav class="top-bar__actions" aria-label="Navegação principal">
+        <a class="ghost-button top-bar__link" href="index.html">Início</a>
+        <a class="ghost-button top-bar__link" href="servicos.html">Serviços</a>
+        <a class="ghost-button top-bar__link" href="agenda.html">Agenda</a>
+        <a class="ghost-button top-bar__link" href="suporte.html">Suporte</a>
+        <a class="ghost-button top-bar__link" href="faq.html">FAQ</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="page-hero page-hero--services" aria-labelledby="servicos-title-main">
+        <div class="page-hero__intro">
+          <h1 id="servicos-title-main">Catálogo completo de serviços</h1>
+          <p>
+            Consulte fluxos digitais padronizados para todas as secretarias, organize solicitações por prioridade e acompanhe
+            indicadores de atendimento em tempo real.
+          </p>
+          <div class="page-hero__actions">
+            <a class="primary-button" href="#servicos" data-scroll-to="servicos">Filtrar serviços</a>
+            <a class="secondary-button" href="agenda.html">Acompanhar prazos relacionados</a>
+          </div>
+          <p class="page-hero__note">Conteúdo orientado para gestores de atendimento e equipes de transformação digital.</p>
+        </div>
+        <div class="page-hero__info">
+          <article class="dashboard-card">
+            <div class="dashboard-card__title">Volume monitorado</div>
+            <ul class="dashboard-card__stats">
+              <li><span>6.820</span> pedidos ativos</li>
+              <li><span>12</span> fluxos prioritários</li>
+              <li><span>04</span> integrações em homologação</li>
+            </ul>
+          </article>
+          <article class="dashboard-card dashboard-card--secondary">
+            <div class="dashboard-card__title">Próximas liberações</div>
+            <ul class="dashboard-card__timeline">
+              <li>Mar · Integração RH Digital</li>
+              <li>Abr · Portal de Documentos Unificado</li>
+              <li>Mai · Analytics do servidor</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="servicos" class="module-section" aria-labelledby="catalogo-servicos-title">
+        <div class="module-section__header">
+          <div>
+            <h2 id="catalogo-servicos-title">Catálogo com filtros avançados</h2>
+            <p>
+              Pesquise por nome, categoria ou status de implantação para identificar rapidamente o fluxo ideal para cada unidade
+              administrativa.
+            </p>
+          </div>
+          <div class="module-section__controls" role="group" aria-label="Filtros de serviço">
+            <input
+              type="search"
+              id="busca-servicos"
+              class="module-section__search"
+              placeholder="Buscar por nome ou palavra-chave"
+              aria-label="Buscar por nome ou palavra-chave"
+            />
+            <div class="filter-group" role="toolbar" aria-label="Filtrar por categoria">
+              <button type="button" class="filter-button is-active" data-filter="todos">Todos</button>
+              <button type="button" class="filter-button" data-filter="gestao">Gestão de Pessoas</button>
+              <button type="button" class="filter-button" data-filter="financeiro">Financeiro</button>
+              <button type="button" class="filter-button" data-filter="documentos">Documentos</button>
+              <button type="button" class="filter-button" data-filter="saude">Saúde</button>
+            </div>
+          </div>
+        </div>
+        <div class="module-grid" id="lista-servicos" role="list"></div>
+      </section>
+
+      <section class="page-section" aria-labelledby="guia-implantacao">
+        <div class="page-section__header">
+          <h2 id="guia-implantacao">Guia de implantação rápida</h2>
+          <p class="page-section__lead">
+            Estruture a adoção do PSARJ Online em quatro etapas que garantem governança, segurança e comunicação efetiva.
+          </p>
+        </div>
+        <ol class="checklist">
+          <li><strong>Mapeie responsáveis:</strong> defina pontos focais por secretaria e garanta patrocínio executivo.</li>
+          <li><strong>Parametrize fluxos:</strong> configure formulários, permissões de acesso e integrações com sistemas legados.</li>
+          <li><strong>Capacite equipes:</strong> promova oficinas práticas, disponibilize trilhas de aprendizagem e FAQs temáticos.</li>
+          <li><strong>Acompanhe indicadores:</strong> monitore SLA, satisfação e cargas de trabalho para direcionar melhorias.</li>
+        </ol>
+      </section>
+
+      <section class="page-section" aria-labelledby="matriz-responsabilidades">
+        <div class="page-section__header">
+          <h2 id="matriz-responsabilidades">Matriz de responsabilidades</h2>
+          <p class="page-section__lead">
+            Utilize a matriz abaixo para organizar obrigações entre órgãos e garantir atendimento padronizado ao servidor.
+          </p>
+        </div>
+        <div class="page-section__grid">
+          <article class="page-section__card">
+            <h3>Gestão de Pessoas</h3>
+            <ul class="page-section__list">
+              <li>Homologar fluxos de férias, licenças e afastamentos.</li>
+              <li>Atualizar dados cadastrais e vínculos funcionais.</li>
+              <li>Acompanhar indicadores de provimento e vacância.</li>
+            </ul>
+          </article>
+          <article class="page-section__card">
+            <h3>Financeiro</h3>
+            <ul class="page-section__list">
+              <li>Validar rubricas e conformidade orçamentária.</li>
+              <li>Emitir relatórios para auditorias internas e externas.</li>
+              <li>Configurar alertas de fechamento de folha.</li>
+            </ul>
+          </article>
+          <article class="page-section__card">
+            <h3>Documentos</h3>
+            <ul class="page-section__list">
+              <li>Gerenciar modelos oficiais e fluxos de assinatura digital.</li>
+              <li>Padronizar portarias, certidões e atas.</li>
+              <li>Garantir versionamento e trilha de auditoria.</li>
+            </ul>
+          </article>
+          <article class="page-section__card">
+            <h3>Saúde do Servidor</h3>
+            <ul class="page-section__list">
+              <li>Agendar perícias e monitorar laudos médicos.</li>
+              <li>Integrar teleatendimento e programas de bem-estar.</li>
+              <li>Gerir comunicação com unidades de origem.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>
+        <strong>PSARJ Online</strong>
+        <p>Secretaria de Administração do Estado do Rio de Janeiro</p>
+      </div>
+      <div>
+        <p>Suporte técnico: suporte@psarj.rj.gov.br</p>
+        <p>Atendimento: (21) 0000-0000</p>
+      </div>
+      <div class="page-footer__tagline">Sistema construído com dados textuais, compatível com revisão em repositório.</div>
+    </footer>
+
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>

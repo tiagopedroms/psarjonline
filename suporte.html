@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Central de suporte - PSARJ Online</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  </head>
+  <body>
+    <header class="top-bar" role="banner">
+      <div class="top-bar__brand">
+        <img src="assets/logo.svg" alt="Logotipo PSARJ" class="top-bar__logo" />
+        <div>
+          <span class="top-bar__title">PSARJ Online</span>
+          <span class="top-bar__subtitle">Portal digital do servidor público do RJ</span>
+        </div>
+      </div>
+      <nav class="top-bar__actions" aria-label="Navegação principal">
+        <a class="ghost-button top-bar__link" href="index.html">Início</a>
+        <a class="ghost-button top-bar__link" href="servicos.html">Serviços</a>
+        <a class="ghost-button top-bar__link" href="agenda.html">Agenda</a>
+        <a class="ghost-button top-bar__link" href="suporte.html">Suporte</a>
+        <a class="ghost-button top-bar__link" href="faq.html">FAQ</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="page-hero page-hero--support" aria-labelledby="suporte-title-main">
+        <div class="page-hero__intro">
+          <h1 id="suporte-title-main">Central integrada de suporte</h1>
+          <p>
+            Conecte-se com especialistas por canal seguro, registre chamados com protocolo automático e acompanhe indicadores de
+            atendimento em tempo real.
+          </p>
+          <div class="page-hero__actions">
+            <a class="primary-button" href="#contato" data-scroll-to="contato">Abrir chamado imediato</a>
+            <a class="secondary-button" href="faq.html">Consultar base de conhecimento</a>
+          </div>
+          <p class="page-hero__note">Atendimento prioritário para casos críticos 24h por dia.</p>
+        </div>
+        <div class="page-hero__info">
+          <article class="dashboard-card">
+            <div class="dashboard-card__title">Nível de serviço</div>
+            <ul class="dashboard-card__stats">
+              <li><span>92%</span> chamados resolvidos no primeiro contato</li>
+              <li><span>12 min</span> tempo médio de resposta</li>
+              <li><span>5/5</span> avaliação em casos críticos</li>
+            </ul>
+          </article>
+          <article class="dashboard-card dashboard-card--secondary">
+            <div class="dashboard-card__title">Canais ativos</div>
+            <ul class="dashboard-card__timeline">
+              <li>Chat autenticado</li>
+              <li>Portal de chamados</li>
+              <li>Plantão telefônico</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="support-section" id="contato" aria-labelledby="contato-suporte-title">
+        <div>
+          <h2 id="contato-suporte-title">Abra um chamado personalizado</h2>
+          <p>
+            Escolha o assunto, descreva a demanda e anexe evidências para agilizar a análise técnica. Nossa equipe direciona o
+            atendimento para a secretaria responsável.
+          </p>
+          <ul class="support-section__channels">
+            <li>
+              <strong>Chat instantâneo:</strong>
+              canal autenticado com registro das conversas e anexos.
+            </li>
+            <li>
+              <strong>Portal de chamados:</strong>
+              dashboards com SLA, responsáveis e histórico completo.
+            </li>
+            <li>
+              <strong>Plantão telefônico:</strong>
+              atendimento emergencial para indisponibilidades críticas.
+            </li>
+          </ul>
+        </div>
+        <form class="support-section__form" aria-label="Formulário de contato">
+          <h3>Preencha os dados do chamado</h3>
+          <label class="field">
+            <span>Nome completo</span>
+            <input type="text" name="nome" required autocomplete="name" />
+          </label>
+          <label class="field">
+            <span>E-mail institucional</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label class="field">
+            <span>Órgão ou secretaria</span>
+            <input type="text" name="orgao" required />
+          </label>
+          <label class="field">
+            <span>Mensagem</span>
+            <textarea name="mensagem" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="primary-button">Registrar chamado</button>
+          <p class="support-section__disclaimer">
+            Receba por e-mail o protocolo, prazos de atendimento e atualizações a cada movimentação.
+          </p>
+        </form>
+      </section>
+
+      <section class="page-section" aria-labelledby="canais-adicionais">
+        <div class="page-section__header">
+          <h2 id="canais-adicionais">Outros canais de atendimento</h2>
+          <p class="page-section__lead">Combine suporte digital com atendimentos presenciais especializados.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Plantão 24h</h3>
+            <p>Equipes de prontidão para indisponibilidades críticas e incidentes de segurança.</p>
+            <ul class="page-section__list">
+              <li>Telefone dedicado: (21) 90000-0001</li>
+              <li>Acionamento por SMS seguro</li>
+              <li>Atualizações via painel de status</li>
+            </ul>
+          </article>
+          <article class="contact-card">
+            <h3>Atendimento presencial</h3>
+            <p>Suporte em campo para implantação de novos módulos e treinamentos in loco.</p>
+            <ul class="page-section__list">
+              <li>Agendamento via portal de chamados</li>
+              <li>Equipe multidisciplinar dedicada</li>
+              <li>Relatórios pós-visita com recomendações</li>
+            </ul>
+          </article>
+          <article class="contact-card">
+            <h3>Comunidade PSARJ</h3>
+            <p>Rede colaborativa com fóruns moderados e compartilhamento de boas práticas.</p>
+            <ul class="page-section__list">
+              <li>Eventos mensais com especialistas</li>
+              <li>Repositório de materiais oficiais</li>
+              <li>Curadoria de conteúdos por secretaria</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="metodologia-suporte">
+        <div class="page-section__header">
+          <h2 id="metodologia-suporte">Metodologia de atendimento</h2>
+          <p class="page-section__lead">Garantimos resposta padronizada com base em fluxos auditáveis.</p>
+        </div>
+        <ol class="checklist">
+          <li><strong>Triagem inteligente:</strong> classificação automática da urgência e roteamento por competência.</li>
+          <li><strong>Diagnóstico colaborativo:</strong> interação entre equipes técnicas e gestores do órgão demandante.</li>
+          <li><strong>Resolução assistida:</strong> aplicação de scripts e orientações validadas pelos especialistas.</li>
+          <li><strong>Feedback contínuo:</strong> pesquisa de satisfação e plano de melhorias compartilhado.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>
+        <strong>PSARJ Online</strong>
+        <p>Secretaria de Administração do Estado do Rio de Janeiro</p>
+      </div>
+      <div>
+        <p>Suporte técnico: suporte@psarj.rj.gov.br</p>
+        <p>Atendimento: (21) 0000-0000</p>
+      </div>
+      <div class="page-footer__tagline">Sistema construído com dados textuais, compatível com revisão em repositório.</div>
+    </footer>
+
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>

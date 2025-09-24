@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Base de conhecimento - PSARJ Online</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  </head>
+  <body>
+    <header class="top-bar" role="banner">
+      <div class="top-bar__brand">
+        <img src="assets/logo.svg" alt="Logotipo PSARJ" class="top-bar__logo" />
+        <div>
+          <span class="top-bar__title">PSARJ Online</span>
+          <span class="top-bar__subtitle">Portal digital do servidor público do RJ</span>
+        </div>
+      </div>
+      <nav class="top-bar__actions" aria-label="Navegação principal">
+        <a class="ghost-button top-bar__link" href="index.html">Início</a>
+        <a class="ghost-button top-bar__link" href="servicos.html">Serviços</a>
+        <a class="ghost-button top-bar__link" href="agenda.html">Agenda</a>
+        <a class="ghost-button top-bar__link" href="suporte.html">Suporte</a>
+        <a class="ghost-button top-bar__link" href="faq.html">FAQ</a>
+      </nav>
+    </header>
+
+    <main class="page-content">
+      <section class="page-hero page-hero--faq" aria-labelledby="faq-title-main">
+        <div class="page-hero__intro">
+          <h1 id="faq-title-main">Base de conhecimento do PSARJ Online</h1>
+          <p>
+            Encontre orientações oficiais, vídeos, tutoriais e perguntas frequentes para apoiar o uso da plataforma pelos órgãos
+            estaduais.
+          </p>
+          <div class="page-hero__actions">
+            <a class="primary-button" href="#faq" data-scroll-to="faq">Explorar perguntas frequentes</a>
+            <a class="secondary-button" href="servicos.html">Ver guias por serviço</a>
+          </div>
+          <p class="page-hero__note">Conteúdo colaborativo atualizado pelas equipes responsáveis de cada secretaria.</p>
+        </div>
+        <div class="page-hero__info">
+          <article class="dashboard-card">
+            <div class="dashboard-card__title">Conteúdo disponível</div>
+            <ul class="dashboard-card__stats">
+              <li><span>120</span> artigos publicados</li>
+              <li><span>48</span> vídeos passo a passo</li>
+              <li><span>18</span> trilhas de capacitação</li>
+            </ul>
+          </article>
+          <article class="dashboard-card dashboard-card--secondary">
+            <div class="dashboard-card__title">Atualizações recentes</div>
+            <ul class="dashboard-card__timeline">
+              <li>Guia: Perícia digital</li>
+              <li>Checklist: Folha suplementar</li>
+              <li>Webinar: Indicadores de SLA</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq" aria-labelledby="faq-detalhada-title">
+        <h2 id="faq-detalhada-title">Perguntas frequentes</h2>
+        <p>Expanda cada pergunta para visualizar orientações completas e links úteis.</p>
+        <div class="faq-list" id="faq-list" role="list"></div>
+      </section>
+
+      <section class="page-section" aria-labelledby="categorias-conhecimento">
+        <div class="page-section__header">
+          <h2 id="categorias-conhecimento">Categorias em destaque</h2>
+          <p class="page-section__lead">Navegue pelos conteúdos mais consultados pelos servidores.</p>
+        </div>
+        <div class="page-section__grid">
+          <article class="page-section__card">
+            <h3>Implantação e acesso</h3>
+            <ul class="page-section__list">
+              <li>Checklist de requisitos de infraestrutura.</li>
+              <li>Manual de perfis e permissões.</li>
+              <li>Integração com identidades governamentais.</li>
+            </ul>
+          </article>
+          <article class="page-section__card">
+            <h3>Gestão de serviços</h3>
+            <ul class="page-section__list">
+              <li>Modelos de formulários digitais.</li>
+              <li>Automação de fluxos de aprovação.</li>
+              <li>Métricas de produtividade por secretaria.</li>
+            </ul>
+          </article>
+          <article class="page-section__card">
+            <h3>Governança e auditoria</h3>
+            <ul class="page-section__list">
+              <li>Procedimentos para auditorias do TCE.</li>
+              <li>Políticas de segurança da informação.</li>
+              <li>Boas práticas de LGPD no atendimento.</li>
+            </ul>
+          </article>
+          <article class="page-section__card">
+            <h3>Suporte ao servidor</h3>
+            <ul class="page-section__list">
+              <li>Fluxos para registrar chamados.</li>
+              <li>Trilhas de autoatendimento.</li>
+              <li>Materiais de comunicação interna.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section" aria-labelledby="fale-com-especialistas">
+        <div class="page-section__header">
+          <h2 id="fale-com-especialistas">Fale com especialistas</h2>
+          <p class="page-section__lead">Caso a base não responda à sua dúvida, acione o time responsável.</p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Canal de dúvidas rápidas</h3>
+            <p>Disponível das 9h às 18h em dias úteis com retorno em até 30 minutos.</p>
+            <ul class="page-section__list">
+              <li>Chat interno com autenticação SSO.</li>
+              <li>Transferência para especialistas por assunto.</li>
+              <li>Histórico integrado ao portal de chamados.</li>
+            </ul>
+          </article>
+          <article class="contact-card">
+            <h3>Mentorias temáticas</h3>
+            <p>Sessões virtuais para aprofundar funcionalidades específicas do PSARJ Online.</p>
+            <ul class="page-section__list">
+              <li>Agendamento quinzenal por secretaria.</li>
+              <li>Materiais complementares enviados por e-mail.</li>
+              <li>Certificado de participação automático.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div>
+        <strong>PSARJ Online</strong>
+        <p>Secretaria de Administração do Estado do Rio de Janeiro</p>
+      </div>
+      <div>
+        <p>Suporte técnico: suporte@psarj.rj.gov.br</p>
+        <p>Atendimento: (21) 0000-0000</p>
+      </div>
+      <div class="page-footer__tagline">Sistema construído com dados textuais, compatível com revisão em repositório.</div>
+    </footer>
+
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>
